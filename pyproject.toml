@@ -1,0 +1,18 @@
+[project]
+name = "vault-cli"
+version = "0.1.0"
+description = "A simple command-line password vault."
+authors = [{ name = "Your Name", email = "you@example.com" }]
+requires-python = ">=3.11"
+dependencies = [
+    "click",
+    "rich",
+    "cryptography",
+]
+
+[project.scripts]
+vault = "vault.cli:cli"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
