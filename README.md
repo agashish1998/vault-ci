@@ -103,6 +103,24 @@ Example:
 vault copy github password
 ```
 
+### Generate a random password
+
+To generate a secure, random password, use the `generate` command. The generated password is automatically copied to the clipboard.
+
+```bash
+vault generate
+```
+
+You can customize the length and character type:
+
+```bash
+# Generate a 30-character password
+vault generate --length 30
+
+# Generate a password with only letters and numbers
+vault generate --type alphanumeric
+```
+
 ### Change master password
 
 To change your master password, use the `change-password` command.

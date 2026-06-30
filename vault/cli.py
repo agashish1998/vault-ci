@@ -12,6 +12,7 @@ from vault.commands.search import search
 from vault.commands.copy import copy
 from vault.commands.backup import backup
 from vault.commands.change_password import change_password
+from vault.commands.generate import generate
 
 @click.group()
 def cli():
@@ -28,6 +29,7 @@ cli.add_command(search)
 cli.add_command(copy)
 cli.add_command(backup)
 cli.add_command(change_password)
+cli.add_command(generate)
 
 if __name__ == '__main__':
     cli()
